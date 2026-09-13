@@ -1,0 +1,5 @@
+import{P as m}from"./ProductQuickAdd-BQA3sywI.js";import"./jsx-runtime-D_zvdyIk.js";import"./index-BxXVWNx3.js";import"./_commonjsHelpers-CqkleIqs.js";import"./button-B_kt0lNs.js";import"./index-DtBajwEi.js";import"./index-CkIaN0ex.js";import"./utils-DCADjnpI.js";import"./loader-circle-Db56uVXG.js";import"./createLucideIcon-Ct87QT5c.js";import"./ProductOptionGroup-4-XUcv_N.js";const P={title:"Molecules/Commerce/ProductQuickAdd",component:m,args:{title:"데일리 상품",options:[{value:"s",label:"S"},{value:"m",label:"M"},{value:"l",label:"L",disabled:!0}]}},r={},o={args:{availability:"sold-out"}};var e,t,a;r.parameters={...r.parameters,docs:{...(e=r.parameters)==null?void 0:e.docs,source:{originalSource:"{}",...(a=(t=r.parameters)==null?void 0:t.docs)==null?void 0:a.source}}};var s,l,i;o.parameters={...o.parameters,docs:{...(s=o.parameters)==null?void 0:s.docs,source:{originalSource:`{
+  args: {
+    availability: 'sold-out'
+  }
+}`,...(i=(l=o.parameters)==null?void 0:l.docs)==null?void 0:i.source}}};const k=["Default","SoldOut"];export{r as Default,o as SoldOut,k as __namedExportsOrder,P as default};

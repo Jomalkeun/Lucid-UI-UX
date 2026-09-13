@@ -1,0 +1,34 @@
+import{j as r}from"./jsx-runtime-D_zvdyIk.js";import{r as a}from"./index-BxXVWNx3.js";import{d as me}from"./reference-types-4ftiVeOu.js";import{L as pe}from"./live-region-BFV6xFQp.js";import{c as j}from"./utils-DCADjnpI.js";import{T as ge}from"./Textarea-qhtOpWTL.js";import"./_commonjsHelpers-CqkleIqs.js";const he=e=>{const t=e.trim();return t?t.split(/\s+/u).length:0},fe=({remaining:e,unit:t})=>{const s=t==="words"?"단어":"자";return e>=0?`${e}${s} 더 입력할 수 있습니다.`:`${Math.abs(e)}${s} 초과했습니다.`},p=a.forwardRef(({value:e,defaultValue:t="",maxCharacters:s=200,maxWords:v,threshold:H=0,onValueChange:g,countMessage:J=fe,onChange:h,id:Q,error:T,hint:M,status:X="default",wrapperClassName:Y,"aria-describedby":Z,...ee},te)=>{const ae=a.useId(),f=Q??ae,$=`${f}-count`,re=`${f}-message`,L=e!==void 0,[se,ne]=a.useState(t),[oe,ce]=a.useState(""),x=L?e:se,V=v!==void 0?"words":"characters",n=Math.max(0,v??s),b=V==="words"?he(x):x.length,w=n-b,C=w<0,y=J({count:b,limit:n,remaining:w,isOverLimit:C,unit:V}),ie=Math.min(100,Math.max(0,H)),le=(n===0?100:b/n*100)>=ie,ue=[Z,T||M?re:null,$].filter(Boolean).join(" ");a.useEffect(()=>{const o=setTimeout(()=>ce(y),500);return()=>clearTimeout(o)},[y]);const de=o=>{const S=o.target.value;L||ne(S),h==null||h(o),g==null||g(S)};return r.jsxs("div",{"data-slot":"character-count",className:j("flex w-full flex-col gap-1.5",Y),children:[r.jsx(ge,{ref:te,id:f,value:x,onChange:de,error:T,hint:M,status:C?"error":X,showCount:!1,enforceMaxLength:!1,"aria-describedby":ue,wrapperClassName:"gap-1.5",...ee}),r.jsx("p",{id:$,className:j("self-end text-krds-body-xs",C?"font-semibold text-krds-danger-text":"text-muted-foreground",!le&&"sr-only"),children:y}),r.jsx(pe,{children:oe})]})});p.displayName="CharacterCount";p.__docgenInfo={description:"",methods:[],displayName:"CharacterCount",props:{value:{required:!1,tsType:{name:"string"},description:""},defaultValue:{required:!1,tsType:{name:"string"},description:"",defaultValue:{value:"''",computed:!1}},maxCharacters:{required:!1,tsType:{name:"number"},description:"",defaultValue:{value:"200",computed:!1}},maxWords:{required:!1,tsType:{name:"number"},description:""},threshold:{required:!1,tsType:{name:"number"},description:"",defaultValue:{value:"0",computed:!1}},onValueChange:{required:!1,tsType:{name:"signature",type:"function",raw:"(value: string) => void",signature:{arguments:[{type:{name:"string"},name:"value"}],return:{name:"void"}}},description:""},countMessage:{required:!1,tsType:{name:"signature",type:"function",raw:"(details: CharacterCountDetails) => string",signature:{arguments:[{type:{name:"CharacterCountDetails"},name:"details"}],return:{name:"string"}}},description:"",defaultValue:{value:"({ remaining, unit }: CharacterCountDetails) => {\n  const unitLabel = unit === 'words' ? '단어' : '자'\n\n  return remaining >= 0\n    ? `${remaining}${unitLabel} 더 입력할 수 있습니다.`\n    : `${Math.abs(remaining)}${unitLabel} 초과했습니다.`\n}",computed:!1}},status:{defaultValue:{value:"'default'",computed:!1},required:!1}},composes:["Omit"]};const xe=me([{library:"GOV.UK Design System",component:"Character count",url:"https://design-system.service.gov.uk/components/character-count/",usedFor:["design","behavior","api","accessibility","content"],relation:"adapted",note:"입력을 강제로 막지 않는 초과 상태, 임계치, 지연된 스크린리더 공지를 참고했습니다."}]),Se={title:"Atoms/Inputs/CharacterCount",component:p,tags:["autodocs","form","accessibility","ref:govuk"],parameters:{references:xe,docs:{description:{component:"Textarea에 문자 또는 단어 제한 안내를 더하는 opt-in 컴포넌트입니다. 제한을 넘겨도 입력을 차단하지 않고 오류 상태를 보여 주며, 스크린리더 공지는 입력을 방해하지 않도록 지연합니다."}}},argTypes:{label:{control:"text",table:{category:"Content"}},hint:{control:"text",table:{category:"Content"}},maxCharacters:{control:{type:"number",min:0},table:{category:"Limit"}},maxWords:{control:{type:"number",min:0},table:{category:"Limit"}},threshold:{control:{type:"range",min:0,max:100,step:5},table:{category:"Limit"}},value:{control:"text",table:{category:"State"}},onValueChange:{action:"value changed",table:{category:"Events"}}},args:{label:"요청 내용",hint:"필요한 지원 내용을 구체적으로 작성해 주세요.",maxCharacters:200,threshold:0,placeholder:"내용을 입력해 주세요."}},c={};function be(){const[e,t]=a.useState("");return r.jsx(p,{label:"문의 내용",value:e,onValueChange:t,maxCharacters:80,placeholder:"80자를 넘겨 입력해 초과 상태를 확인해 보세요."})}const i={render:()=>r.jsx(be,{}),parameters:{controls:{disable:!0}}},l={args:{maxCharacters:30,value:"제한을 초과한 뒤에도 사용자가 내용을 검토하고 수정할 수 있도록 입력은 계속 허용합니다."}},u={args:{label:"짧은 소개",hint:"핵심 내용을 20단어 이내로 작성해 주세요.",maxWords:20,maxCharacters:void 0,value:"접근성 높은 공공 서비스를 만드는 프론트엔드 개발자입니다."}},d={args:{maxCharacters:100,threshold:75,value:"카운트 안내는 제한의 75퍼센트에 도달하기 전까지 화면에서 숨겨지지만 보조 기술에서는 입력과 연결된 설명으로 유지됩니다."}},m={args:{maxCharacters:50,countMessage:({remaining:e})=>e>=0?`작성 가능 분량: ${e}자`:`줄여야 하는 분량: ${Math.abs(e)}자`}};var q,D,I;c.parameters={...c.parameters,docs:{...(q=c.parameters)==null?void 0:q.docs,source:{originalSource:"{}",...(I=(D=c.parameters)==null?void 0:D.docs)==null?void 0:I.source}}};var E,W,N;i.parameters={...i.parameters,docs:{...(E=i.parameters)==null?void 0:E.docs,source:{originalSource:`{
+  render: () => <ControlledDemo />,
+  parameters: {
+    controls: {
+      disable: true
+    }
+  }
+}`,...(N=(W=i.parameters)==null?void 0:W.docs)==null?void 0:N.source}}};var k,O,R;l.parameters={...l.parameters,docs:{...(k=l.parameters)==null?void 0:k.docs,source:{originalSource:`{
+  args: {
+    maxCharacters: 30,
+    value: '제한을 초과한 뒤에도 사용자가 내용을 검토하고 수정할 수 있도록 입력은 계속 허용합니다.'
+  }
+}`,...(R=(O=l.parameters)==null?void 0:O.docs)==null?void 0:R.source}}};var _,A,B;u.parameters={...u.parameters,docs:{...(_=u.parameters)==null?void 0:_.docs,source:{originalSource:`{
+  args: {
+    label: '짧은 소개',
+    hint: '핵심 내용을 20단어 이내로 작성해 주세요.',
+    maxWords: 20,
+    maxCharacters: undefined,
+    value: '접근성 높은 공공 서비스를 만드는 프론트엔드 개발자입니다.'
+  }
+}`,...(B=(A=u.parameters)==null?void 0:A.docs)==null?void 0:B.source}}};var P,z,F;d.parameters={...d.parameters,docs:{...(P=d.parameters)==null?void 0:P.docs,source:{originalSource:`{
+  args: {
+    maxCharacters: 100,
+    threshold: 75,
+    value: '카운트 안내는 제한의 75퍼센트에 도달하기 전까지 화면에서 숨겨지지만 보조 기술에서는 입력과 연결된 설명으로 유지됩니다.'
+  }
+}`,...(F=(z=d.parameters)==null?void 0:z.docs)==null?void 0:F.source}}};var G,K,U;m.parameters={...m.parameters,docs:{...(G=m.parameters)==null?void 0:G.docs,source:{originalSource:`{
+  args: {
+    maxCharacters: 50,
+    countMessage: ({
+      remaining
+    }) => remaining >= 0 ? \`작성 가능 분량: \${remaining}자\` : \`줄여야 하는 분량: \${Math.abs(remaining)}자\`
+  }
+}`,...(U=(K=m.parameters)==null?void 0:K.docs)==null?void 0:U.source}}};const je=["Default","Controlled","Exceeded","WordLimit","Threshold","CustomMessage"];export{i as Controlled,m as CustomMessage,c as Default,l as Exceeded,d as Threshold,u as WordLimit,je as __namedExportsOrder,Se as default};

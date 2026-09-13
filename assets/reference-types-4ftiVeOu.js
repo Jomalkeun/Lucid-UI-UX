@@ -1,0 +1,1 @@
+const a={design:"디자인",behavior:"동작",api:"API",accessibility:"접근성",content:"콘텐츠",comparison:"비교"},s={inspired:"아이디어 참조",adapted:"재구성",primitive:"기반 구현체",wrapped:"직접 사용",compared:"비교 대상"},i=e=>e;export{a,i as d,s as r};

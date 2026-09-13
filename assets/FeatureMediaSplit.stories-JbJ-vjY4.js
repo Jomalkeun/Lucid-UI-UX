@@ -1,0 +1,26 @@
+import{j as e}from"./jsx-runtime-D_zvdyIk.js";import{W as T}from"./WireframeMedia-DAgc5xmV.js";import{B as u}from"./button-B_kt0lNs.js";import{c as f}from"./utils-DCADjnpI.js";import{C as q}from"./check-CvnDgXMx.js";import"./index-BxXVWNx3.js";import"./_commonjsHelpers-CqkleIqs.js";import"./index-DtBajwEi.js";import"./index-CkIaN0ex.js";import"./loader-circle-Db56uVXG.js";import"./createLucideIcon-Ct87QT5c.js";function k({eyebrow:i,title:M,description:l,items:n=[],media:d,mediaPosition:S="end",tone:o="default",actions:m=[],className:F}){const c=e.jsx("div",{className:"flex flex-col justify-center p-6 sm:p-10",children:e.jsxs("div",{className:"max-w-xl",children:[i?e.jsx("p",{className:"text-sm font-bold text-krds-primary-base",children:i}):null,e.jsx("h2",{className:"mt-3 text-3xl font-black tracking-tight",children:M}),l?e.jsx("div",{className:"mt-4 text-sm leading-6 text-krds-gray-60",children:l}):null,n.length?e.jsx("ul",{className:"mt-7 space-y-4",children:n.map(t=>e.jsxs("li",{className:"flex gap-3",children:[e.jsx(q,{className:"mt-0.5 size-4 shrink-0 text-krds-primary-base","aria-hidden":"true"}),e.jsxs("div",{children:[e.jsx("h3",{className:"text-sm font-bold",children:t.title}),t.description?e.jsx("p",{className:"mt-1 text-sm text-krds-gray-60",children:t.description}):null]})]},t.title))}):null,m.length?e.jsx("div",{className:"mt-7 flex flex-wrap gap-3",children:m.map(t=>t.href?e.jsx(u,{asChild:!0,children:e.jsx("a",{href:t.href,children:t.label})},t.label):e.jsx(u,{onClick:t.onClick,children:t.label},t.label))}):null]})}),p=d?e.jsx("div",{className:"min-h-64 overflow-hidden bg-krds-gray-10 [&>*]:size-full",children:d}):null;return e.jsx("section",{className:f("mx-auto max-w-screen-xl px-5 py-14",F),children:e.jsx("div",{className:f("grid overflow-hidden rounded-[var(--radius-section)] border border-krds-gray-20 md:grid-cols-2",o==="subtle"&&"bg-[var(--surface-section-subtle)]",o==="emphasis"&&"bg-[var(--surface-section-emphasis)] text-white"),children:S==="start"?e.jsxs(e.Fragment,{children:[p,c]}):e.jsxs(e.Fragment,{children:[c,p]})})})}k.__docgenInfo={description:"",methods:[],displayName:"FeatureMediaSplit",props:{eyebrow:{required:!1,tsType:{name:"ReactNode"},description:""},title:{required:!0,tsType:{name:"ReactNode"},description:""},description:{required:!1,tsType:{name:"ReactNode"},description:""},items:{required:!1,tsType:{name:"Array",elements:[{name:"FeatureMediaSplitItem"}],raw:"FeatureMediaSplitItem[]"},description:"",defaultValue:{value:"[]",computed:!1}},media:{required:!1,tsType:{name:"ReactNode"},description:""},mediaPosition:{required:!1,tsType:{name:"union",raw:"'start' | 'end'",elements:[{name:"literal",value:"'start'"},{name:"literal",value:"'end'"}]},description:"",defaultValue:{value:"'end'",computed:!1}},tone:{required:!1,tsType:{name:"union",raw:"'default' | 'subtle' | 'emphasis'",elements:[{name:"literal",value:"'default'"},{name:"literal",value:"'subtle'"},{name:"literal",value:"'emphasis'"}]},description:"",defaultValue:{value:"'default'",computed:!1}},actions:{required:!1,tsType:{name:"Array",elements:[{name:"FeatureMediaSplitAction"}],raw:"FeatureMediaSplitAction[]"},description:"",defaultValue:{value:"[]",computed:!1}},className:{required:!1,tsType:{name:"string"},description:""}}};const L={title:"Organisms/Content/FeatureMediaSplit",component:k,parameters:{layout:"fullscreen"},args:{eyebrow:"FEATURE",title:"미디어와 함께 핵심 가치를 설명합니다",description:"재사용 가능한 콘텐츠와 미디어 영역을 서로 독립적으로 조합합니다.",items:[{title:"유연한 배치",description:"미디어를 좌우로 배치할 수 있습니다."},{title:"접근 가능한 구조",description:"의미 있는 제목과 목록을 제공합니다."}],media:e.jsx(T,{label:"FEATURE MEDIA",tone:"cool"}),actions:[{label:"자세히 보기",href:"#detail"}]}},a={},s={args:{mediaPosition:"start",tone:"subtle"}},r={args:{title:"작은 화면에서도 정보의 순서를 유지하는 긴 제목 예시",description:"충분히 긴 설명과 여러 항목을 사용해 좁은 화면의 줄바꿈과 읽기 순서를 검증합니다.",items:[{title:"첫 번째 항목",description:"긴 보조 설명입니다."},{title:"두 번째 항목",description:"긴 보조 설명입니다."},{title:"세 번째 항목",description:"긴 보조 설명입니다."}]},parameters:{viewport:{defaultViewport:"mobile1"}}};var x,h,g;a.parameters={...a.parameters,docs:{...(x=a.parameters)==null?void 0:x.docs,source:{originalSource:"{}",...(g=(h=a.parameters)==null?void 0:h.docs)==null?void 0:g.source}}};var b,j,v;s.parameters={...s.parameters,docs:{...(b=s.parameters)==null?void 0:b.docs,source:{originalSource:`{
+  args: {
+    mediaPosition: 'start',
+    tone: 'subtle'
+  }
+}`,...(v=(j=s.parameters)==null?void 0:j.docs)==null?void 0:v.source}}};var y,N,w;r.parameters={...r.parameters,docs:{...(y=r.parameters)==null?void 0:y.docs,source:{originalSource:`{
+  args: {
+    title: '작은 화면에서도 정보의 순서를 유지하는 긴 제목 예시',
+    description: '충분히 긴 설명과 여러 항목을 사용해 좁은 화면의 줄바꿈과 읽기 순서를 검증합니다.',
+    items: [{
+      title: '첫 번째 항목',
+      description: '긴 보조 설명입니다.'
+    }, {
+      title: '두 번째 항목',
+      description: '긴 보조 설명입니다.'
+    }, {
+      title: '세 번째 항목',
+      description: '긴 보조 설명입니다.'
+    }]
+  },
+  parameters: {
+    viewport: {
+      defaultViewport: 'mobile1'
+    }
+  }
+}`,...(w=(N=r.parameters)==null?void 0:N.docs)==null?void 0:w.source}}};const O=["Default","MediaStart","MobileLongContent"];export{a as Default,s as MediaStart,r as MobileLongContent,O as __namedExportsOrder,L as default};

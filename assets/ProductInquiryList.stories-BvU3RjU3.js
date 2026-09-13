@@ -1,0 +1,5 @@
+import{P as p}from"./ProductInquiryList-CPF8zyyh.js";import"./jsx-runtime-D_zvdyIk.js";import"./index-BxXVWNx3.js";import"./_commonjsHelpers-CqkleIqs.js";import"./button-B_kt0lNs.js";import"./index-DtBajwEi.js";import"./index-CkIaN0ex.js";import"./utils-DCADjnpI.js";import"./loader-circle-Db56uVXG.js";import"./createLucideIcon-Ct87QT5c.js";const P={title:"Organisms/Commerce/ProductInquiryList",component:p,args:{items:[{id:"q-1",question:"재입고 일정이 궁금합니다.",author:"user***",date:"2026.09.10",status:"answered",answer:"다음 주 입고 예정입니다."},{id:"q-2",question:"비공개 문의",author:"user***",date:"2026.09.09",status:"pending",private:!0}]}},r={},t={args:{items:[]}};var e,s,o;r.parameters={...r.parameters,docs:{...(e=r.parameters)==null?void 0:e.docs,source:{originalSource:"{}",...(o=(s=r.parameters)==null?void 0:s.docs)==null?void 0:o.source}}};var a,m,i;t.parameters={...t.parameters,docs:{...(a=t.parameters)==null?void 0:a.docs,source:{originalSource:`{
+  args: {
+    items: []
+  }
+}`,...(i=(m=t.parameters)==null?void 0:m.docs)==null?void 0:i.source}}};const h=["Default","Empty"];export{r as Default,t as Empty,h as __namedExportsOrder,P as default};

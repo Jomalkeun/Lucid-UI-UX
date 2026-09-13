@@ -1,0 +1,29 @@
+import{j as e}from"./jsx-runtime-D_zvdyIk.js";import{r as $}from"./index-BxXVWNx3.js";import{c as z}from"./utils-DCADjnpI.js";import{d as A}from"./reference-types-4ftiVeOu.js";import"./_commonjsHelpers-CqkleIqs.js";function m({className:s,items:t=[],height:d=320,itemHeight:a=64,overscan:p=3,renderItem:u,emptyMessage:R="표시할 항목이 없습니다.",...V}){const[q,I]=$.useState(0),M=t.length*a,C=Math.ceil(d/a),n=Math.max(Math.floor(q/a)-p,0),E=Math.min(n+C+p*2,t.length),_=t.slice(n,E);return e.jsx("div",{className:z("relative overflow-auto rounded-md border border-krds-gray-30 bg-white",s),style:{height:d},onScroll:r=>I(r.currentTarget.scrollTop),...V,children:t.length===0?e.jsx("div",{className:"flex h-full items-center justify-center p-6 text-sm text-krds-gray-60",children:R}):e.jsx("div",{className:"relative",style:{height:M},children:e.jsx("div",{className:"absolute left-0 right-0 top-0",style:{transform:`translateY(${n*a}px)`},children:_.map((r,H)=>{const D=n+H;return e.jsx("div",{className:"border-b border-krds-gray-20",style:{height:a},children:u?u(r,D):e.jsxs("div",{className:"flex h-full items-center justify-between gap-4 px-4",children:[e.jsxs("div",{className:"min-w-0",children:[e.jsx("p",{className:"truncate text-sm font-medium text-krds-gray-90",children:r.title}),r.description?e.jsx("p",{className:"mt-1 truncate text-sm text-krds-gray-60",children:r.description}):null]}),r.meta?e.jsx("span",{className:"shrink-0 text-xs text-krds-gray-50",children:r.meta}):null]})},r.id)})})})})}m.__docgenInfo={description:"",methods:[],displayName:"VirtualScroll",props:{items:{required:!1,tsType:{name:"Array",elements:[{name:"T"}],raw:"T[]"},description:"",defaultValue:{value:"[]",computed:!1}},height:{required:!1,tsType:{name:"number"},description:"",defaultValue:{value:"320",computed:!1}},itemHeight:{required:!1,tsType:{name:"number"},description:"",defaultValue:{value:"64",computed:!1}},overscan:{required:!1,tsType:{name:"number"},description:"",defaultValue:{value:"3",computed:!1}},renderItem:{required:!1,tsType:{name:"signature",type:"function",raw:"(item: T, index: number) => React.ReactNode",signature:{arguments:[{type:{name:"T"},name:"item"},{type:{name:"number"},name:"index"}],return:{name:"ReactReactNode",raw:"React.ReactNode"}}},description:""},emptyMessage:{required:!1,tsType:{name:"ReactReactNode",raw:"React.ReactNode"},description:"",defaultValue:{value:"'표시할 항목이 없습니다.'",computed:!1}}}};const S=Array.from({length:1e3},(s,t)=>({id:`notice-${t+1}`,title:`민원 처리 항목 ${t+1}`,description:"담당 부서 검토 대기 중인 신청 내역입니다.",meta:t%3===0?"긴급":"일반"})),F=A([{library:"PrimeVue",component:"VirtualScroller",url:"https://primevue.org/virtualscroller/",usedFor:["behavior","accessibility","api"],relation:"compared"},{library:"Quasar",component:"Virtual Scroll",url:"https://quasar.dev/vue-components/virtual-scroll",usedFor:["comparison"],relation:"compared"}]),Y={title:"Molecules/Display/VirtualScroll",component:m,tags:["autodocs","display","ref:quasar","ref:primevue"],parameters:{references:F,layout:"centered",docs:{description:{component:"큰 목록에서 현재 화면에 필요한 항목만 렌더링하는 고정 높이 가상 스크롤 컴포넌트입니다."}}},argTypes:{height:{control:{type:"range",min:160,max:560,step:20},table:{category:"Layout"}},itemHeight:{control:{type:"range",min:44,max:96,step:4},table:{category:"Layout"}},overscan:{control:{type:"range",min:0,max:10,step:1},table:{category:"Behavior"}},emptyMessage:{control:"text",table:{category:"Content"}}},args:{items:S,height:320,itemHeight:64,overscan:3,emptyMessage:"표시할 항목이 없습니다.",className:"w-[520px]"}},l={name:"기본"},o={name:"컴팩트",args:{itemHeight:48}},c={name:"커스텀 항목",render:()=>e.jsx(m,{className:"w-[520px]",items:S,height:320,itemHeight:72,renderItem:(s,t)=>e.jsxs("div",{className:"flex h-full items-center gap-3 px-4",children:[e.jsx("span",{className:"flex size-9 shrink-0 items-center justify-center rounded-full bg-krds-primary-5 text-sm font-semibold text-krds-primary-60",children:t+1}),e.jsxs("div",{className:"min-w-0",children:[e.jsx("p",{className:"truncate text-sm font-semibold text-krds-gray-90",children:s.title}),e.jsx("p",{className:"truncate text-sm text-krds-gray-60",children:s.description})]})]})}),parameters:{controls:{disable:!0}}},i={name:"빈 목록",args:{items:[]}};var x,g,f;l.parameters={...l.parameters,docs:{...(x=l.parameters)==null?void 0:x.docs,source:{originalSource:`{
+  name: '기본'
+}`,...(f=(g=l.parameters)==null?void 0:g.docs)==null?void 0:f.source}}};var y,h,v;o.parameters={...o.parameters,docs:{...(y=o.parameters)==null?void 0:y.docs,source:{originalSource:`{
+  name: '컴팩트',
+  args: {
+    itemHeight: 48
+  }
+}`,...(v=(h=o.parameters)==null?void 0:h.docs)==null?void 0:v.source}}};var b,N,j;c.parameters={...c.parameters,docs:{...(b=c.parameters)==null?void 0:b.docs,source:{originalSource:`{
+  name: '커스텀 항목',
+  render: () => <VirtualScroll className="w-[520px]" items={items} height={320} itemHeight={72} renderItem={(item, index) => <div className="flex h-full items-center gap-3 px-4">
+          <span className="flex size-9 shrink-0 items-center justify-center rounded-full bg-krds-primary-5 text-sm font-semibold text-krds-primary-60">
+            {index + 1}
+          </span>
+          <div className="min-w-0">
+            <p className="truncate text-sm font-semibold text-krds-gray-90">{item.title}</p>
+            <p className="truncate text-sm text-krds-gray-60">{item.description}</p>
+          </div>
+        </div>} />,
+  parameters: {
+    controls: {
+      disable: true
+    }
+  }
+}`,...(j=(N=c.parameters)==null?void 0:N.docs)==null?void 0:j.source}}};var k,T,w;i.parameters={...i.parameters,docs:{...(k=i.parameters)==null?void 0:k.docs,source:{originalSource:`{
+  name: '빈 목록',
+  args: {
+    items: []
+  }
+}`,...(w=(T=i.parameters)==null?void 0:T.docs)==null?void 0:w.source}}};const G=["Default","Compact","CustomItem","Empty"];export{o as Compact,c as CustomItem,l as Default,i as Empty,G as __namedExportsOrder,Y as default};

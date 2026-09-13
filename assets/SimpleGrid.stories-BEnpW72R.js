@@ -1,0 +1,15 @@
+import{j as n}from"./jsx-runtime-D_zvdyIk.js";import{d as b}from"./reference-types-4ftiVeOu.js";function o({children:s,columns:i=3,minChildWidth:e,gap:h=16,alignItems:x="stretch",style:S}){return n.jsx("div",{style:{display:"grid",gridTemplateColumns:e?`repeat(auto-fit, minmax(${e}px, 1fr))`:`repeat(${i}, minmax(0, 1fr))`,gap:h,alignItems:x,...S},children:s})}o.__docgenInfo={description:"",methods:[],displayName:"SimpleGrid",props:{children:{required:!1,tsType:{name:"ReactNode"},description:""},columns:{required:!1,tsType:{name:"number"},description:"",defaultValue:{value:"3",computed:!1}},minChildWidth:{required:!1,tsType:{name:"number"},description:""},gap:{required:!1,tsType:{name:"union",raw:"number | string",elements:[{name:"number"},{name:"string"}]},description:"",defaultValue:{value:"16",computed:!1}},alignItems:{required:!1,tsType:{name:"CSSProperties['alignItems']",raw:"CSSProperties['alignItems']"},description:"",defaultValue:{value:"'stretch'",computed:!1}},style:{required:!1,tsType:{name:"CSSProperties"},description:""}}};const C=b([{library:"Chakra UI",component:"SimpleGrid",url:"https://www.chakra-ui.com/docs/components/simple-grid",usedFor:["comparison"],relation:"compared"},{library:"Quasar",component:"Flex Grid",url:"https://quasar.dev/layout/grid/introduction-to-flexbox",usedFor:["comparison"],relation:"compared"}]),q={title:"Layout/Primitives/SimpleGrid",component:o,tags:["autodocs","ref:chakra-ui","ref:quasar"],parameters:{references:C,layout:"centered",docs:{description:{component:"반복 카드나 타일을 간단하게 배치하는 CSS Grid 래퍼입니다."}}},argTypes:{columns:{control:{type:"range",min:1,max:6,step:1},table:{category:"Layout"}},minChildWidth:{control:{type:"range",min:120,max:320,step:20},table:{category:"Responsive"}},gap:{control:"text",table:{category:"Layout"}},alignItems:{control:"select",options:["stretch","start","center","end"],table:{category:"Layout"}}},args:{columns:3,gap:16,alignItems:"stretch"},render:s=>n.jsx(o,{...s,style:{width:680},children:Array.from({length:6},(i,e)=>n.jsxs("div",{style:{minHeight:92,borderRadius:10,background:"#f1f5f9",border:"1px solid #e2e8f0",display:"grid",placeItems:"center",fontWeight:800},children:["Item ",e+1]},e))})},r={name:"기본"},a={name:"반응형 minChildWidth",args:{columns:3,minChildWidth:180}},t={name:"좁은 간격",args:{columns:4,gap:8}};var m,c,d;r.parameters={...r.parameters,docs:{...(m=r.parameters)==null?void 0:m.docs,source:{originalSource:`{
+  name: '기본'
+}`,...(d=(c=r.parameters)==null?void 0:c.docs)==null?void 0:d.source}}};var l,p,u;a.parameters={...a.parameters,docs:{...(l=a.parameters)==null?void 0:l.docs,source:{originalSource:`{
+  name: '반응형 minChildWidth',
+  args: {
+    columns: 3,
+    minChildWidth: 180
+  }
+}`,...(u=(p=a.parameters)==null?void 0:p.docs)==null?void 0:u.source}}};var g,f,y;t.parameters={...t.parameters,docs:{...(g=t.parameters)==null?void 0:g.docs,source:{originalSource:`{
+  name: '좁은 간격',
+  args: {
+    columns: 4,
+    gap: 8
+  }
+}`,...(y=(f=t.parameters)==null?void 0:f.docs)==null?void 0:y.source}}};const T=["Default","Responsive","Dense"];export{r as Default,t as Dense,a as Responsive,T as __namedExportsOrder,q as default};

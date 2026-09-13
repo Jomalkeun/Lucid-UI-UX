@@ -1,0 +1,19 @@
+import{j as e}from"./jsx-runtime-D_zvdyIk.js";import{d as R}from"./reference-types-4ftiVeOu.js";import{r as S}from"./index-BxXVWNx3.js";import{c as C}from"./utils-DCADjnpI.js";import"./_commonjsHelpers-CqkleIqs.js";const q={transparent:"",panel:"rounded-md border border-krds-gray-30 bg-white p-4 text-krds-gray-90 shadow-sm dark:border-krds-gray-70 dark:bg-krds-gray-90 dark:text-white",canvas:"min-h-40 rounded-md bg-krds-gray-5 p-4 text-krds-gray-90 dark:bg-krds-gray-95 dark:text-white"},o=S.forwardRef(({className:v,mode:n="light",surface:x="transparent",color:w="#256ef4",style:b,children:T,...N},j)=>e.jsx("div",{ref:j,"data-theme":n,className:C(q[x],v),style:{colorScheme:n==="system"?"light dark":n,"--lucid-primary":w,...b},...N,children:T}));o.displayName="Theme";o.__docgenInfo={description:"",methods:[],displayName:"Theme",props:{mode:{required:!1,tsType:{name:"union",raw:"'light' | 'dark' | 'system'",elements:[{name:"literal",value:"'light'"},{name:"literal",value:"'dark'"},{name:"literal",value:"'system'"}]},description:"",defaultValue:{value:"'light'",computed:!1}},surface:{required:!1,tsType:{name:"union",raw:"'transparent' | 'panel' | 'canvas'",elements:[{name:"literal",value:"'transparent'"},{name:"literal",value:"'panel'"},{name:"literal",value:"'canvas'"}]},description:"",defaultValue:{value:"'transparent'",computed:!1}},color:{required:!1,tsType:{name:"string"},description:"",defaultValue:{value:"'#256ef4'",computed:!1}},children:{required:!1,tsType:{name:"ReactReactNode",raw:"React.ReactNode"},description:""}}};const D=R([{library:"Chakra UI",component:"Theme",url:"https://www.chakra-ui.com/docs/components/theme",usedFor:["comparison"],relation:"compared"}]);function _(){return e.jsxs("div",{className:"grid gap-3",children:[e.jsxs("div",{children:[e.jsx("p",{className:"text-sm font-semibold",children:"테마 영역"}),e.jsx("p",{className:"text-sm leading-6 text-krds-gray-60 dark:text-krds-gray-30",children:"특정 화면 조각에 테마 속성과 색상 스킴을 적용합니다."})]}),e.jsx("button",{type:"button",className:"w-fit rounded-md bg-krds-primary-50 px-3 py-2 text-sm font-medium text-white hover:bg-krds-primary-60",children:"확인"})]})}const O={title:"Atoms/Primitives/Theme",component:o,tags:["autodocs","primitives","ref:chakra-ui"],parameters:{references:D,layout:"centered",docs:{description:{component:"특정 영역에 theme 속성, color-scheme, 디자인 토큰 변수를 적용하는 wrapper primitive입니다."}}},argTypes:{mode:{control:"inline-radio",options:["light","dark","system"],table:{category:"Theme"}},surface:{control:"inline-radio",options:["transparent","panel","canvas"],table:{category:"Theme"}},color:{control:"color",table:{category:"Theme"}}},args:{mode:"light",surface:"panel",color:"#256ef4",className:"w-80",children:e.jsx(_,{})}},a={name:"기본"},r={name:"다크",args:{mode:"dark"}},s={name:"캔버스",args:{surface:"canvas",className:"w-96"}},t={name:"투명",args:{surface:"transparent"}};var c,m,d;a.parameters={...a.parameters,docs:{...(c=a.parameters)==null?void 0:c.docs,source:{originalSource:`{
+  name: '기본'
+}`,...(d=(m=a.parameters)==null?void 0:m.docs)==null?void 0:d.source}}};var i,l,p;r.parameters={...r.parameters,docs:{...(i=r.parameters)==null?void 0:i.docs,source:{originalSource:`{
+  name: '다크',
+  args: {
+    mode: 'dark'
+  }
+}`,...(p=(l=r.parameters)==null?void 0:l.docs)==null?void 0:p.source}}};var u,g,f;s.parameters={...s.parameters,docs:{...(u=s.parameters)==null?void 0:u.docs,source:{originalSource:`{
+  name: '캔버스',
+  args: {
+    surface: 'canvas',
+    className: 'w-96'
+  }
+}`,...(f=(g=s.parameters)==null?void 0:g.docs)==null?void 0:f.source}}};var h,y,k;t.parameters={...t.parameters,docs:{...(h=t.parameters)==null?void 0:h.docs,source:{originalSource:`{
+  name: '투명',
+  args: {
+    surface: 'transparent'
+  }
+}`,...(k=(y=t.parameters)==null?void 0:y.docs)==null?void 0:k.source}}};const P=["Default","Dark","Canvas","Transparent"];export{s as Canvas,r as Dark,a as Default,t as Transparent,P as __namedExportsOrder,O as default};

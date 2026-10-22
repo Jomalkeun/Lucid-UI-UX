@@ -1,0 +1,35 @@
+import{j as e}from"./jsx-runtime-D_zvdyIk.js";import{R as o}from"./index-BxXVWNx3.js";import{c as U}from"./utils-DCADjnpI.js";import"./_commonjsHelpers-CqkleIqs.js";const q={displayName:"홍길동",email:"user@example.com",language:"ko",marketingEmails:!1,productUpdates:!0,securityAlerts:!0};function b({title:r="계정 설정",description:d="프로필 정보와 알림 수신 범위를 관리합니다.",defaultValues:n,submitLabel:c="저장",successMessage:m="설정이 저장되었습니다.",onSubmit:u,children:x,className:f,...y}){const p=o.useMemo(()=>({...q,...n}),[n]),[t,h]=o.useState(p),[F,k]=o.useState(!1);o.useEffect(()=>{h(p)},[p]);const a=(s,C)=>{h(T=>({...T,[s]:C})),k(!1)},j=s=>{s.preventDefault(),u==null||u(t),k(!0)};return x?e.jsx("form",{className:f,onSubmit:j,...y,children:x}):e.jsxs("form",{className:U("w-full max-w-[640px] rounded-lg border border-krds-gray-20 bg-white p-6 text-krds-gray-90 shadow-sm",f),onSubmit:j,...y,children:[e.jsxs("header",{className:"mb-6",children:[e.jsx("h2",{className:"m-0 text-krds-title-md font-semibold",children:r}),e.jsx("p",{className:"mt-2 text-krds-body-sm text-krds-gray-60",children:d})]}),e.jsxs("section",{className:"space-y-4","aria-labelledby":"settings-profile-heading",children:[e.jsx("h3",{id:"settings-profile-heading",className:"text-krds-body-md font-semibold",children:"프로필"}),e.jsxs("label",{className:"block",children:[e.jsx("span",{className:"mb-2 block text-krds-body-sm font-medium",children:"이름"}),e.jsx("input",{className:"h-10 w-full rounded-md border border-krds-gray-30 px-3 text-krds-body-sm outline-none focus:border-krds-primary focus:ring-2 focus:ring-krds-primary/20",value:t.displayName,onChange:s=>a("displayName",s.target.value)})]}),e.jsxs("label",{className:"block",children:[e.jsx("span",{className:"mb-2 block text-krds-body-sm font-medium",children:"이메일"}),e.jsx("input",{type:"email",className:"h-10 w-full rounded-md border border-krds-gray-30 px-3 text-krds-body-sm outline-none focus:border-krds-primary focus:ring-2 focus:ring-krds-primary/20",value:t.email,onChange:s=>a("email",s.target.value)})]}),e.jsxs("label",{className:"block",children:[e.jsx("span",{className:"mb-2 block text-krds-body-sm font-medium",children:"언어"}),e.jsxs("select",{className:"h-10 w-full rounded-md border border-krds-gray-30 px-3 text-krds-body-sm outline-none focus:border-krds-primary focus:ring-2 focus:ring-krds-primary/20",value:t.language,onChange:s=>a("language",s.target.value),children:[e.jsx("option",{value:"ko",children:"한국어"}),e.jsx("option",{value:"en",children:"English"}),e.jsx("option",{value:"ja",children:"日本語"})]})]})]}),e.jsxs("section",{className:"mt-6 border-t border-krds-gray-20 pt-6","aria-labelledby":"settings-notification-heading",children:[e.jsx("h3",{id:"settings-notification-heading",className:"text-krds-body-md font-semibold",children:"알림"}),e.jsxs("div",{className:"mt-3 space-y-3",children:[e.jsx(g,{label:"마케팅 이메일",description:"이벤트와 프로모션 소식을 이메일로 받습니다.",checked:t.marketingEmails,onChange:s=>a("marketingEmails",s)}),e.jsx(g,{label:"제품 업데이트",description:"새 기능과 개선 사항 안내를 받습니다.",checked:t.productUpdates,onChange:s=>a("productUpdates",s)}),e.jsx(g,{label:"보안 알림",description:"로그인, 비밀번호, 권한 변경과 같은 중요 알림을 받습니다.",checked:t.securityAlerts,onChange:s=>a("securityAlerts",s)})]})]}),e.jsxs("footer",{className:"mt-6 flex items-center justify-between gap-3",children:[e.jsx("p",{className:"min-h-5 text-krds-body-sm text-krds-success",children:F?m:null}),e.jsx("button",{type:"submit",className:"h-10 rounded-md bg-krds-primary px-4 text-krds-body-sm font-semibold text-white hover:bg-krds-primary-60 focus:outline-none focus:ring-2 focus:ring-krds-primary/30",children:c})]})]})}function g({label:r,description:d,checked:n,onChange:c}){return e.jsxs("label",{className:"flex items-center justify-between gap-4 rounded-md border border-krds-gray-20 p-4",children:[e.jsxs("span",{children:[e.jsx("span",{className:"block text-krds-body-sm font-medium",children:r}),e.jsx("span",{className:"mt-1 block text-krds-body-xs text-krds-gray-60",children:d})]}),e.jsx("input",{type:"checkbox",className:"h-5 w-5 accent-krds-primary",checked:n,onChange:m=>c(m.target.checked)})]})}b.__docgenInfo={description:"",methods:[],displayName:"SettingsForm",props:{title:{required:!1,tsType:{name:"string"},description:"",defaultValue:{value:"'계정 설정'",computed:!1}},description:{required:!1,tsType:{name:"string"},description:"",defaultValue:{value:"'프로필 정보와 알림 수신 범위를 관리합니다.'",computed:!1}},defaultValues:{required:!1,tsType:{name:"Partial",elements:[{name:"SettingsFormValues"}],raw:"Partial<SettingsFormValues>"},description:""},submitLabel:{required:!1,tsType:{name:"string"},description:"",defaultValue:{value:"'저장'",computed:!1}},successMessage:{required:!1,tsType:{name:"string"},description:"",defaultValue:{value:"'설정이 저장되었습니다.'",computed:!1}},onSubmit:{required:!1,tsType:{name:"signature",type:"function",raw:"(values: SettingsFormValues) => void",signature:{arguments:[{type:{name:"SettingsFormValues"},name:"values"}],return:{name:"void"}}},description:""},children:{required:!1,tsType:{name:"ReactReactNode",raw:"React.ReactNode"},description:""}},composes:["Omit"]};const _={title:"Organisms/Forms/SettingsForm",component:b,tags:["autodocs","form","krds-extended"],parameters:{docs:{description:{component:`
+## SettingsForm (패턴)
+
+**계정 프로필 및 알림 설정 폼** 패턴입니다.
+텍스트 입력, 셀렉트, 토글 스위치를 조합하여 사용자 설정 UI를 구성합니다.
+
+---
+
+### 주요 UX 포인트
+
+- 저장 버튼 클릭 시 일시적 성공 메시지 표시
+- 알림 항목마다 설명 텍스트 제공
+- 프로필 섹션과 알림 섹션을 구분선으로 분리
+        `}}},argTypes:{title:{control:"text",table:{category:"Content"}},description:{control:"text",table:{category:"Content"}},submitLabel:{control:"text",table:{category:"Content"}},successMessage:{control:"text",table:{category:"Feedback"}},defaultValues:{control:"object",table:{category:"Data"}},onSubmit:{action:"submit",table:{category:"Events"}}},args:{title:"계정 설정",description:"프로필 정보와 알림 수신 범위를 관리합니다.",submitLabel:"저장",successMessage:"설정이 저장되었습니다."},render:r=>e.jsx(b,{...r})},l={name:"기본 (Default)",parameters:{docs:{description:{story:'**프로필 정보 편집 + 알림 설정 토글**이 포함된 설정 폼입니다. "저장" 버튼을 클릭하면 성공 메시지가 잠시 나타납니다.'}}}},i={name:"초기값 지정",args:{defaultValues:{displayName:"김관리",email:"admin@example.com",language:"en",marketingEmails:!0,productUpdates:!0,securityAlerts:!0}}};var N,v,V;l.parameters={...l.parameters,docs:{...(N=l.parameters)==null?void 0:N.docs,source:{originalSource:`{
+  name: '기본 (Default)',
+  parameters: {
+    docs: {
+      description: {
+        story: '**프로필 정보 편집 + 알림 설정 토글**이 포함된 설정 폼입니다. "저장" 버튼을 클릭하면 성공 메시지가 잠시 나타납니다.'
+      }
+    }
+  }
+}`,...(V=(v=l.parameters)==null?void 0:v.docs)==null?void 0:V.source}}};var S,w,E;i.parameters={...i.parameters,docs:{...(S=i.parameters)==null?void 0:S.docs,source:{originalSource:`{
+  name: '초기값 지정',
+  args: {
+    defaultValues: {
+      displayName: '김관리',
+      email: 'admin@example.com',
+      language: 'en',
+      marketingEmails: true,
+      productUpdates: true,
+      securityAlerts: true
+    }
+  }
+}`,...(E=(w=i.parameters)==null?void 0:w.docs)==null?void 0:E.source}}};const I=["Default","WithInitialValues"];export{l as Default,i as WithInitialValues,I as __namedExportsOrder,_ as default};

@@ -1,0 +1,1 @@
+function o(m,u,n){const e=Number.isFinite(Number(m))?Number(m):0,t=Number.isFinite(Number(u))?Math.max(e,Number(u)):Number.MAX_SAFE_INTEGER,N=Number.isFinite(Number(n))&&Number(n)>0?Number(n):1,i=r=>Math.min(t,Math.max(e,Number.isFinite(r)?r:e));return{lower:e,upper:t,increment:N,clamp:i,advance:(r,b)=>i(Number((i(r)+N*b).toPrecision(15)))}}export{o as n};

@@ -1,0 +1,5 @@
+import{j as t}from"./jsx-runtime-D_zvdyIk.js";import{L as s}from"./ListingProductCard-B0PucIEA.js";import"./ProductCard-BXTSYW-6.js";import"./utils-DCADjnpI.js";import"./ProductCardBase-LsT4Jcak.js";import"./ProductMedia-CpzsUhUO.js";import"./WireframeMedia-DAgc5xmV.js";import"./ProductPrice-DViHxkmP.js";import"./ProductRating-DtuO-xAj.js";import"./star-CebXzFWR.js";import"./createLucideIcon-Ct87QT5c.js";import"./index-BxXVWNx3.js";import"./_commonjsHelpers-CqkleIqs.js";import"./heart-DRT3Fu_h.js";const E={title:"Molecules/Commerce/ListingProductCard",component:s,args:{product:{id:"daily-runner",title:"데일리 러너",badge:"BEST",price:"139,000원",tone:"cool"}}},r={render:a=>t.jsx("div",{className:"w-64",children:t.jsx(s,{...a})})};var o,e,i;r.parameters={...r.parameters,docs:{...(o=r.parameters)==null?void 0:o.docs,source:{originalSource:`{
+  render: args => <div className="w-64">
+      <ListingProductCard {...args} />
+    </div>
+}`,...(i=(e=r.parameters)==null?void 0:e.docs)==null?void 0:i.source}}};const P=["Default"];export{r as Default,P as __namedExportsOrder,E as default};
